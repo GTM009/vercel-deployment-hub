@@ -8,10 +8,10 @@ const Footer = () => {
           <div className="w-6 h-6 rounded-md bg-gradient-gold flex items-center justify-center">
             <Film className="w-3 h-3 text-primary-foreground" />
           </div>
-          <span className="font-display font-semibold text-sm">RentSave</span>
+          <span className="font-display font-semibold text-sm">BoltRentalServices</span>
         </div>
         <p className="text-xs text-muted-foreground">
-          © {new Date().getFullYear()} RentSave. All rights reserved.
+          © {new Date().getFullYear()} BoltRentalServices. All rights reserved.
         </p>
       </div>
     </footer>
