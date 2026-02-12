@@ -37,6 +37,11 @@ const CTASection = () => {
                   Contact Us on Telegram
                 </a>
               </Button>
+              <Button variant="heroOutline" size="lg" className="text-base px-8 py-6 rounded-xl" asChild>
+                <a href="https://t.me/OurWorkProofs" target="_blank" rel="noopener noreferrer">
+                  See Our Work & Proofs
+                </a>
+              </Button>
             </div>
 
             <p className="text-xs text-muted-foreground mt-6">No subscriptions • No hidden fees • Pay per rental</p>
