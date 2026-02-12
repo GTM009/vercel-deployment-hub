@@ -55,7 +55,6 @@ export default {
           DEFAULT: "hsl(var(--gold-glow))",
           dim: "hsl(var(--gold-dim))",
         },
-        success: "hsl(var(--success))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
