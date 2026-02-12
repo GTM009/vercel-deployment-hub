@@ -89,4 +89,72 @@
   .glow-gold-strong {
     box-shadow: 0 0 30px hsl(42 92% 56% / 0.3), 0 0 60px hsl(42 92% 56% / 0.1);
   }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom gold slider */
+.slider-gold {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 9999px;
+  background: hsl(220 15% 16%);
+  outline: none;
+  cursor: pointer;
+}
+
+.slider-gold::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, hsl(42 92% 56%), hsl(38 85% 45%));
+  box-shadow: 0 0 12px hsl(42 92% 56% / 0.4), 0 2px 8px hsl(0 0% 0% / 0.3);
+  border: 2px solid hsl(42 92% 56%);
+  cursor: grab;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.slider-gold::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 20px hsl(42 92% 56% / 0.6), 0 2px 8px hsl(0 0% 0% / 0.3);
+}
+
+.slider-gold::-webkit-slider-thumb:active {
+  cursor: grabbing;
+  transform: scale(1.05);
+}
+
+.slider-gold::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, hsl(42 92% 56%), hsl(38 85% 45%));
+  box-shadow: 0 0 12px hsl(42 92% 56% / 0.4), 0 2px 8px hsl(0 0% 0% / 0.3);
+  border: 2px solid hsl(42 92% 56%);
+  cursor: grab;
+}
+
+.slider-gold::-moz-range-thumb:hover {
+  transform: scale(1.15);
+}
+
+.slider-gold::-moz-range-track {
+  height: 8px;
+  border-radius: 9999px;
+  background: hsl(220 15% 16%);
+}
+
+/* Crown rotator animation */
+@keyframes crown-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.crown-rotate {
+  animation: crown-rotate 1s ease-in-out;
 }
